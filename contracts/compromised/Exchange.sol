@@ -40,7 +40,7 @@ contract Exchange is ReentrancyGuard {
 
         emit TokenBought(msg.sender, tokenId, currentPriceInWei);
 
-        return tokenId;
+        return 0;
     }
 
     function sellOne(uint256 tokenId) external nonReentrant {
